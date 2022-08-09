@@ -1,0 +1,88 @@
+:root {
+    --darkTurquoise: rgb(36, 147, 147);
+    --darkerTurquoise: rgb(27, 117, 117);
+    --turquoise: darkTurquoise;
+    --darkRed: #cb4848;
+    --darkerRed: #9e3030;
+}
+
+.btn-turquoise {
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+}
+
+.btn-turquoise:hover {
+    border-color: var(--darkerTurquoise);
+    background-color: var(--darkerTurquoise);
+}
+
+.btn-red {
+    background-color: var(--darkRed);
+    color: white;
+}
+
+.btn-red:hover {
+    background-color: var(--darkerRed);
+    color: #aeaeae;
+}
+
+.footerContainer {
+    height: 3rem;
+    background-color: var(--darkerTurquoise);
+}
+
+.headerContainer {
+    height: 4rem;
+}
+
+.headerContainer > nav {
+    background-color: var(--darkTurquoise);
+    height: 100%;
+}
+
+.mainContainer {
+    height: calc(100vh - 7rem);
+    overflow-y: auto;
+    padding: 1rem 6rem 2rem 6rem;
+}
+
+.mainContainer > div:first-child {
+    width: 50%;
+}
+
+.mainContainer > div:nth-child(2) > div:first-child {
+    border-bottom: 1px grey solid;
+    padding-bottom: 1rem;
+}
+
+.mainContainer > div:nth-child(2) thead tr {
+    background-color: rgb(13, 114, 114);
+}
+
+.mainContainer > div:nth-child(2) tbody tr:nth-child(2n - 1) {
+    background-color: rgba(22, 192, 192, 0.467);
+}
+
+.mainContainer > div:nth-child(2) tbody tr:nth-child(2n) {
+    background-color: rgba(21, 139, 139, 0.626);
+}
+
+.mainContainer > div:nth-child(2) table td, 
+.mainContainer > div:nth-child(2) table th {
+    color: white;
+}
+
+.mainContainer > div:nth-child(2) table {
+    vertical-align: middle;
+}
+
+.deleteColumn > button {
+    display: flex;
+    align-items: center;
+}
+
+.deleteColumn > button > svg {
+    margin-right: 0.5rem;
+    position: relative;
+    top: 1px;
+}
